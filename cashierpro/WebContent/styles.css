@@ -1,0 +1,207 @@
+body{
+	font-family: "Roboto", sans-serif;
+	padding: 0;
+	margin: 0;
+	
+}
+
+header{
+	width: 100%;
+	height: 30px;
+	position: fixed;
+	background: #22242A;
+	padding: 29px;
+}
+
+.sidenav{
+	position: fixed;
+	background: #2F323A;
+	margin-top: 88px;
+	width: 248px;
+	height: 100%;
+	padding-top: 30px;
+	transition: 0.5s;
+	transition-property: left;
+	left: 0;
+}
+
+.sidenav .user_type{
+	width: 100px;
+	height: 100px;
+	border-radius: 100px;
+	margin-bottom: 10px;
+}
+
+.company_name h3{
+	margin: 0;
+	color: #fff;
+	font-size: 22px;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+
+.company_name span{
+	color: #1DC4E7;
+}
+
+.logout_btn{
+	padding: 5px;
+	background: #19B3D3;
+	text-decoration: none;
+	float: right;
+	margin-top: -30px;
+	margin-right: 40px;
+	border-radius: 2px;
+	font-size: 15px;
+	font-weight: 600;
+	color: #fff;
+	transition: 0.5s;
+	transition-property: background;
+}
+
+.logout_btn:hover{
+	background: #0D9DBB;
+}
+
+
+
+.sidenav h4{
+	color: #ccc;
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+.sidenav a{
+	padding-left: 40px;
+	width: 100%;
+	line-height: 60px;
+	text-decoration: none;
+	color: #fff;
+	display: block;
+	box-sizing: border-box;
+	transition: 0.5s;
+	transition-property: background;
+}
+
+.sidenav i{
+	padding-right: 10px;
+}
+
+.sidenav a:hover{
+	background: #19B3D3;
+}
+
+
+label #sidebar_btn{
+	z-index: 1;
+	color: #fff;
+	position: fixed;
+	cursor: pointer;
+	left: 300px;
+	font-size: 20px;
+	margin: 5px 0;
+	transition: 0.5s;
+	transition-property: color;
+}
+
+
+
+#nav_animation:checked ~ .sidenav{
+	left: -190px;
+}
+
+#nav_animation:checked ~ .sidenav a span{
+	display: none;
+}
+
+#nav_animation:checked ~ .sidenav a{
+	font-size: 20px;
+	margin-left: 170px;
+	width:80px;
+}
+
+
+#nav_animation:checked ~ .workspace{
+	margin-left: 60px;
+}
+
+#nav_animation:checked ~ footer .info{
+	margin-left: 70px;
+}
+
+#nav_animation:checked ~ footer #sp1{
+	margin-left: 72%;
+}
+
+#nav_animation:checked ~ footer #sp2{
+	margin-left: 77%;
+}
+
+#nav_animation:checked ~ footer #sp3{
+	margin-left: 78%;
+}
+
+#nav_animation{
+	display: none;
+}
+
+
+lebel #sidebar_btn:hover{
+	color: #19B3D3;
+}
+
+.workspace{
+	height: 100vh;
+	margin-left: 250px;
+	background-image: url("bb.jpg");
+	background-repeat:no-repeat;
+	background-position: center;
+	background-size: cover;
+	transition: 0.5s;
+}
+
+footer{
+	background: #22242A;
+	padding: 29px;
+	color: #fff;
+}
+
+.info{
+	margin-left: 20%;
+	transition: 0.5s;
+}
+
+.address{
+	margin-left: 80%;
+}
+
+h5 #sp1{
+	margin-left: 67%;
+	transition: 0.5s;
+}
+
+h5 #sp2{
+	margin-left: 73%;
+	transition: 0.5s;
+}
+
+h5 #sp3{
+	margin-left: 74%;
+	transition: 0.5s;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 60%;
+  border: 1px solid black;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
